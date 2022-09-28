@@ -1,0 +1,29 @@
+body{
+    font:1em/1.625 Georgia,Times New Roman,Times,serif;color:#066;
+    background:none repeat scroll 0% 0% rgb(255,255,255);
+    margin:0;padding:2.5em 0 0}
+    #wrapper{max-width:980px;margin:0 auto}
+    h1{font-family:LiHei,LiHei Pro Medium,Microsoft YaHei,Microsoft JhengHei,STHeiti,Arial,Helvetica,sans-serif;font-weight:700;font-size:4em;line-height:1;text-align:center;color:#003;margin-bottom:.5em;letter-spacing:.2em;text-shadow:0pt .08em .04em rgba(0,0,0,.2)}
+    h2{font-size:2em;font-weight:400;line-height:1.625;margin-bottom:.8125em;text-align:center;color:#630;text-transform:uppercase;text-shadow:0pt 0px 5px rgba(0,0,0,.3)}
+    #Author{text-align:center;margin-bottom:1.625em}
+    #Author .sub{display:inline-block;margin-inline-start:1.5em}
+    #Author .sub:nth-of-type(1){margin-inline-start:0}
+    a{color:#660;text-decoration:none}
+    a:hover{color:#003;text-decoration:none}
+    #colorList{display:flex;flex-wrap:wrap}
+    dl{line-height:1.2;font-size:.75em;margin:0 10px;padding:20px 0;width:470px;height:125px;border-bottom:1px dotted rgb(153,153,153)}
+    dl:hover,dl:active{background-color:#cccccc1a}
+    .colorBox{display:block;width:120px;height:120px;line-height:1.618;float:left;margin-right:1em;margin-bottom:1em}
+    .colorName{font-family:LiHei,LiHei Pro Medium,Microsoft YaHei,Microsoft JhengHei,STHeiti,Arial,Helvetica,sans-serif;font-size:2em;line-height:1;margin-bottom:.7em;color:#003;text-shadow:0pt 1px 1px rgba(0,0,0,.5)}.colorValue{color:#003;text-transform:uppercase;margin-bottom:.8em;line-height:1.7}
+    .colorValue span{font-family:Lucida Console,monospace;user-select:all;color:#630;font-weight:bolder;padding:1px 3px;background-color:#cccccc4d;text-shadow:0pt 1px 1px rgba(255,255,255,.8)}
+    .colorDesc{line-height:1.618;font-size:14px}
+    .colorDesc.small{font-size:13px}
+    #copyright{clear:both;font-size:small;text-align:center;padding:3em 0;text-transform:uppercase}
+    @media screen and (max-width: 980px){h1{font-size:40px;letter-spacing:2px}h2{font-size:20px}
+    #colorList{justify-content:center}
+    #Author .sub{display:block;margin-inline-start:0}}
+    @media screen and (max-width: 490px){dl{width:100%;height:auto}
+    .colorBox{width:80px;height:80px;margin-bottom:0}
+    .colorValue{margin-bottom:18px}
+    .colorDesc{clear:left}
+    .colorDesc.small{font-size:14px}}
