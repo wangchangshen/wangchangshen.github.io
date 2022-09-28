@@ -72,13 +72,13 @@
 
     
 <body>
-    <!--网站动态title  -->
+    <!--网站动态title 不需要额外加载文件 -->
     <script type="text/javascript">
         var OriginTitile = document.title,
             st;
         document.addEventListener("visibilitychange", function () {
-            document.hidden ? (document.title = "看不见我🙈~看不见我🙈~", clearTimeout(st)) : (document.title =
-                "(๑•̀ㅂ•́) ✧被发现了～", st = setTimeout(function () {
+            document.hidden ? (document.title = "眉头窄人间", clearTimeout(st)) : (document.title =
+                "放下一床宽", st = setTimeout(function () {
                     document.title = OriginTitile
                 }, 3e3))
         })
@@ -246,6 +246,281 @@ $('.bg-cover').css('background-image', 'url(./image/' + new Date().getDay() + '.
    </div>
 </div>   
 
+
+<!-- 主体 -->
+<main class="content" style="min-height: 772px;">
+
+    
+    <div id="indexCard" class="index-card">
+        <div class="container ">
+            <div class="card">
+                <div class="card-content">                    
+                    <div class="dream">
+    
+                        <div class="row">
+                            <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
+                                分享与代码😏
+                            </div>
+                        </div>
+                    </div>
+                     
+                    <!-- 推荐文章 -->
+                    <div id="recommend-sections" class="recommend">
+                                            
+                        <div class="title"><i class="fa fa-thumbs-o-up"></i>&nbsp;&nbsp;Recommended Posts</div>
+
+                        <div class="row">
+                            <!-- 1 -->
+                            <div class="col s12 m6">
+                                <div class="post-card" style="background-image: url('./image/13.jpg')">
+                                    <div class="post-body">
+                                        <!-- 暂时用不到 -->
+                                        <!-- <div class="post-categories">
+                                            
+                                            <a href="/categories/深度学习/" class="category" target="_blank">生活</a>   
+                                        </div> -->
+                                        <a href="./resume/index.html" target="_blank">
+                                            <h3 class="post-title">个人简历</h3>
+                                        </a>
+                                        <p class="post-description">
+                                            
+                                            所求不过碎银几两
+                                        </p>
+                                        <a href="./resume/index.html" target="_blank" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FF5E3A 0%, #FF2A68 100%)">
+                                            <i class="icon fa fa-eye fa-fw"></i>Read more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- 2 -->
+                            <div class="col s12 m6">
+                                <div class="post-card" style="background-image: url('./image/13.jpg')">
+                                    <div class="post-body">
+                                        <!-- <div class="post-categories">
+                                            
+                                            <a href="/categories/指令集/" class="category" target="_blank">收藏</a>
+                                            
+                                        </div> -->
+                                        <a href="./traditionalcolor/index.html" target="_blank">
+                                            <h3 class="post-title">中国传统颜色</h3>
+                                        </a>
+                                        <p class="post-description">
+                                            中国传统颜色参数
+                                        </p>
+                                        <a href="./traditionalcolor/index.html" target="_blank" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #EF4DB6 0%, #C643FC 100%)">
+                                            <i class="icon fa fa-eye fa-fw"></i>Read more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- 3 -->
+                            <div class="col s12 m6 aos-init" data-aos="zoom-in-up">
+                                <div class="post-card" style="background-image: url('./image/13.jpg')">
+                                    <div class="post-body">
+                                        <!-- <div class="post-categories">
+                                            
+                                            <a href="/categories/深度学习/" class="category" target="_blank">学习</a>
+                                            
+                                        </div> -->
+                                        <a href="https://lry89757.github.io/" target="_blank">
+                                            <h3 class="post-title">他人网站</h3>
+                                        </a>
+                                        <p class="post-description">
+                                            
+                                            向这个网站学习
+                                        </p>
+                                        <a href="https://lry89757.github.io/" target="_blank" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #1AD6FD 0%, #1D62F0 100%)">
+                                            <i class="icon fa fa-eye fa-fw"></i>Read more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+    <!-- 所有文章卡片 -->
+    <article id="articles" class="container articles" >
+
+        <div class="row article-row">
+            <!-- 简历 -->
+            <div class="article col s12 m6 l4 aos-init" data-aos="zoom-in" >
+                <div class="card">
+                    <!-- 头 -->
+                    <a href="./resume/index.html" target="_blank">
+                        <div class="card-image">
+                            
+                 
+                            <img src="./image/6.jpg" class="responsive-img" alt="简历">
+                            
+                            <span class="card-title">简历</span>
+                        </div>
+                    </a>
+                    <!-- 中 -->
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            
+                            个人简历，求几两碎银
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-9-28
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="" class="post-category" target="_blank">
+                                    生活
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- 尾，标签 -->
+                    <div class="card-action article-tags">
+                        
+                        <a href="" target="_blank">
+                            <span class="chip bg-color">生活</span>
+                        </a>
+                        
+                        <!-- <a href="/tags/烽火集团/" target="_blank">
+                            <span class="chip bg-color">烽火集团</span>
+                        </a>
+                         -->
+                   
+                    </div>
+                    
+                </div>
+            </div>
+             <!-- 中国传统颜色 -->
+            <div class="article col s12 m6 l4 aos-init" data-aos="zoom-in" >
+                <div class="card">
+                    <!-- 头 -->
+                    <a href="./traditionalcolor/index.html" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="./image/7.jpg" class="responsive-img" alt="收藏">
+                            
+                            <span class="card-title">中国传统颜色</span>
+                        </div>
+                    </a>
+                    <!-- 中 -->
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            
+                            中国传统颜色参数
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-9-28
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="" class="post-category" target="_blank">
+                                    收藏
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- 尾，标签 -->
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/深度学习/" target="_blank">
+                            <span class="chip bg-color">收藏</span>
+                        </a>
+                        
+                        <!-- <a href="/tags/烽火集团/" target="_blank">
+                            <span class="chip bg-color">烽火集团</span>
+                        </a>
+                         -->
+                   
+                    </div>
+                    
+                </div>
+            </div>
+             <!-- 网站 -->
+            <div class="article col s12 m6 l4 aos-init" data-aos="zoom-in" >
+                <div class="card">
+                    <!-- 头 -->
+                    <a href="https://lry89757.github.io/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="./image/9.jpg" class="responsive-img" alt="网站">
+                            
+                            <span class="card-title">网站</span>
+                        </div>
+                    </a>
+                    <!-- 中 -->
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            
+                            学习他人网站
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-9-28
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="" class="post-category" target="_blank">
+                                    网站
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- 尾，标签 -->
+                    <div class="card-action article-tags">
+                        
+                        <a href="" target="_blank">
+                            <span class="chip bg-color">学习</span>
+                        </a>
+                        
+                        <!-- <a href="/tags/烽火集团/" target="_blank">
+                            <span class="chip bg-color">烽火集团</span>
+                        </a>
+                         -->
+                   
+                    </div>
+                    
+                </div>
+            </div>
+            
+
+            
+
+            
+        </div>
+    </article>
+
+</main>
 <!--左右箭头滑动  -->
 <script>
     $(function () {
@@ -315,7 +590,7 @@ $('.bg-cover').css('background-image', 'url(./image/' + new Date().getDay() + '.
 <footer class="page-footer bg-color">
     <div class="container row center-align">
         <div class="col s12 m8 l8 copy-right">
-            Copyright© 2021 逯润雨. 
+            
             <br>
             <span id="sitetime"></span><span class="my-face">ღゝ◡╹)ノ♡</span>
             <br>                                      
@@ -382,7 +657,7 @@ $('.bg-cover').css('background-image', 'url(./image/' + new Date().getDay() + '.
 
      
 
-<!-- 小熊 -->
+<!-- 小熊 使用了from等ES6 的模块化，file打开无效果-->
 <script src="./live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script>
 
 <script>!function(e){var r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));
