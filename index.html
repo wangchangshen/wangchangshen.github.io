@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="default">
+    <!--  -->
+    <head><meta name="generator" content="Hexo 3.9.0">
+
+        <meta charset="utf-8">  
+        <meta name="description" content="ww's Blog">
+    
+        <!-- 网页名称 -->
+        <title>wangchangshen's Blog</title>
+        <!-- 网页图标 -->
+        <link rel="icon" type="image/jpg" href="./favicon.jpg">
+        <!-- 载入css文件 -->
+    
+        <link rel="stylesheet" type="text/css" href="./libs/awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/aos/3.0.0-beta.6/aos.css">
+        <link rel="stylesheet" type="text/css" href="./libs/animate/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/lightgallery/1.6.12/css/lightgallery.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/matery.css">
+        <link rel="stylesheet" type="text/css" href="./css/my.css">
+        <link rel="stylesheet" href="./css/prism-tomorrow.css" type="text/css">
+        <link rel="stylesheet" href="./css/prism-line-numbers.css" type="text/css">    
+        
+      <!-- <style type="text/css">
+            
+                
+                code[class*="language-"],
+                pre[class*="language-"] {
+                    white-space: pre !important;
+                }
+    
+            
+        </style>
+     -->
+
+         <!-- <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?46e79e71af0709a5b9106bf20cecc493";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script> -->
+    
+        
+        
+           <!-- <script>
+                (function(){
+                    var bp = document.createElement('script');
+                    var curProtocol = window.location.protocol.split(':')[0];
+                    if (curProtocol === 'https') {
+                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+                    }
+                    else {
+                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                    }
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(bp, s);
+                })();
+            </script> -->
+         
+         <!-- 压缩版的jquery库 -->
+        <script src="https://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+        <!-- 今日诗词 -->
+        <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+        
+
+    
+    </head>
+
+    
+<body>
+    <!--网站动态title  -->
+    <script type="text/javascript">
+        var OriginTitile = document.title,
+            st;
+        document.addEventListener("visibilitychange", function () {
+            document.hidden ? (document.title = "看不见我🙈~看不见我🙈~", clearTimeout(st)) : (document.title =
+                "(๑•̀ㅂ•́) ✧被发现了～", st = setTimeout(function () {
+                    document.title = OriginTitile
+                }, 3e3))
+        })
+    </script>
+    <!--  -->
+    <style>
+        .carousel-control {
+            width: 45px;
+            height: 45px;
+            line-height: 55px;
+            border-radius: 45px;
+            background: transparent;
+            cursor: pointer;
+            z-index: 100;
+        }
+    
+        #prev-cover {
+            position: absolute;
+            top: 48%;
+            left: 8px;
+        }
+    
+        #next-cover {
+            position: absolute;
+            top: 48%;
+            right: 8px;;
+        }
+    
+        #prev-cover i {
+            margin-right: 3px;
+        }
+    
+        #next-cover i {
+            margin-left: 3px;
+        }
+    
+        .carousel-control:hover {
+            background-color:rgba(0, 0, 0, .4);
+        }
+    
+        .carousel-control i {
+            color: #fff;
+            font-size: 2.4rem;
+        }
+    </style>
+<!-- 开头 -->
+<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
+    <!-- 左右箭头 -->
+    <div id="prev-cover" class="left waves-effect carousel-control">
+        <i class="icon fa fa-angle-left"></i>
+    </div>
+    <div id="next-cover" class="right waves-effect carousel-control">
+        <i class="icon fa fa-angle-right"></i>
+    </div>
+    <!-- 展览图片1 -->
+    <div class="carousel-item red white-text bg-cover about-cover">
+        <div class="container">
+            <div class="row">
+    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+        <div class="brand">
+            <div class="title center-align">
+
+                
+                    good day for you .
+                
+            </div>
+
+            <div class="description center-align">
+                
+                    <span id="jinrishici-sentence"></span>
+                
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+<script>
+// 每天切换 banner 图.  Switch banner image every day.
+$('.bg-cover').css('background-image', 'url(./image/' + new Date().getDay() + '.jpg)');//new Date().getDay() 返回星期几
+</script>
+</div>
+    </div>
+    <!--展览图片2  -->
+    <div class="carousel-item amber white-text carousel-post bg-cover"
+    style="background-image: url('./image/9.jpg');"> 
+        <div class="container">
+            <div class="row">
+                <div class="col s10 offset-s1">
+                    <div class="title center-align">少年学问寡成</div>
+                        
+                    
+                
+                <div class="description center-align">
+                </div>
+                    <!-- <div class="cover-btns">
+                        <a href="/2021/10/16/code-trace-of-mmdetection/" class="waves-effect waves-light btn" target="_blank">
+                            <i class="icon fa fa-eye fa-fw"></i>Read more
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   <!-- 3 -->
+   <div class="carousel-item amber white-text carousel-post bg-cover"
+   style="background-image: url('./image/10.jpg');"> 
+       <div class="container">
+           <div class="row">
+               <div class="col s10 offset-s1">
+                   <div class="title center-align">壮年事功难立</div>
+                   <div class="description center-align">
+                   
+                    
+                   </div>
+                   <!-- <div class="cover-btns">
+                       <a href="/2021/10/16/code-trace-of-mmdetection/" class="waves-effect waves-light btn" target="_blank">
+                           <i class="icon fa fa-eye fa-fw"></i>
+                       </a>
+                   </div> -->
+               </div>
+           </div>
+       </div>
+   </div>
+   <!-- 4 -->
+   <div class="carousel-item amber white-text carousel-post bg-cover"
+   style="background-image: url('./image/12.jpg');"> 
+       <div class="container">
+           <div class="row">
+               <div class="col s10 offset-s1">
+                   <div class="title center-align">贵有恒，何必三更眠五更起</div>
+                   <div class="description center-align">
+                   
+                    
+                   </div>
+                   <!-- <div class="cover-btns">
+                       <a href="/2021/10/16/code-trace-of-mmdetection/" class="waves-effect waves-light btn" target="_blank">
+                           <i class="icon fa fa-eye fa-fw"></i>
+                       </a>
+                   </div> -->
+               </div>
+           </div>
+       </div>
+   </div>
+   <!-- 5 -->
+   <div class="carousel-item amber white-text carousel-post bg-cover"
+   style="background-image: url('./image/11.jpg');"> 
+       <div class="container">
+           <div class="row">
+               <div class="col s10 offset-s1">
+                   <div class="title center-align">最无益，只怕一日曝十日寒</div>
+                   <div class="description center-align">
+                   
+                    
+                   </div>
+                   <!-- <div class="cover-btns">
+                       <a href="/2021/10/16/code-trace-of-mmdetection/" class="waves-effect waves-light btn" target="_blank">
+                           <i class="icon fa fa-eye fa-fw"></i>
+                       </a>
+                   </div> -->
+               </div>
+           </div>
+       </div>
+   </div>
+</div>   
+
+<!--左右箭头滑动  -->
+<script>
+    $(function () {
+        let coverSlider = $('.carousel');
+        coverSlider.carousel({
+            duration: Number('120'),
+            fullWidth: true,
+            indicators: 'true' === 'true'
+        });
+    
+        let carouselIntervalId;
+        
+        // Loop to call the next cover article picture.
+        let autoCarousel = function() {
+            carouselIntervalId = setInterval(function () {
+                coverSlider.carousel('next');
+            }, 5000);
+        };
+        autoCarousel();
+        
+    
+        let restartPlay = function () {
+            
+            clearInterval(carouselIntervalId);
+            autoCarousel();
+            
+        };
+     
+        // prev and next cover post.
+        $('#prev-cover').click(function () {
+            coverSlider.carousel('prev');
+            restartPlay();
+        });
+        $('#next-cover').click(function () {
+            coverSlider.carousel('next');
+            restartPlay();
+        });
+        
+    });
+    </script>
+<!-- 载入js -->
+<script src="https://cdn.bootcss.com/materialize/1.0.0/js/materialize.min.js"></script> 
+
+
+<!-- 未知 -->
+ <script src="https://cdn.bootcss.com/aos/3.0.0-beta.6/aos.js"></script>
+
+ <script src="https://cdn.bootcss.com/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+<script src="https://cdn.bootcss.com/scrollprogress/3.0.2/scrollProgress.min.js"></script>
+<script src="https://cdn.bootcss.com/lightgallery/1.6.12/js/lightgallery-all.min.js"></script>
+<script src="./js/matery.js"></script>  
+
+<!-- 鼠标点击效果 爱心  -->          
+<!-- <script src="./libs/others/clicklove.js"></script>   -->
+    <!-- 鼠标点击效果 文字  -->          
+<script src="./js/wenzi.js" type="text/javascript"></script>
+<!-- 鼠标点击效果 扩散 注意src="https:// -->  
+<!-- <script type="text/javascript" src="https://cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+<canvas class="fireworks" style="position: fixed; left: 0; top: 0; z-index: 1; pointer-events: none;"></canvas>
+<script type="text/javascript" src="./js/fireworks.js"></script>
+         -->
+
+
+
+<!--统计数据  -->
+<footer class="page-footer bg-color">
+    <div class="container row center-align">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright© 2021 逯润雨. 
+            <br>
+            <span id="sitetime"></span><span class="my-face">ღゝ◡╹)ノ♡</span>
+            <br>                                      
+                        <span id="busuanzi_container_site_pv" style="display: inline;"></span>
+                        总访问量: <span id="busuanzi_value_site_pv" class="white-color"></span>         
+                           
+                        <span id="busuanzi_container_site_uv" style="display: inline;"></span>
+                        人次&nbsp; | &nbsp;访客人数: <span id="busuanzi_value_site_uv" class="white-color"></span> 人
+                                  
+                <!-- &nbsp; | &nbsp;字数统计:&nbsp;
+                <span class="white-color">213.8k</span> 字 -->                     
+            <br>
+
+        </div>
+
+        <div class="col s12 m4 l4 social-link social-statis">
+
+</div>
+
+    </div>
+</footer>
+<!-- 载入时间统计 -->
+<script language=javascript>
+    function siteTime() {
+        window.setTimeout("siteTime()", 1000);
+        var seconds = 1000;
+        var minutes = seconds * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+        var today = new Date();
+        var todayYear = today.getFullYear();
+        var todayMonth = today.getMonth() + 1;
+        var todayDate = today.getDate();
+        var todayHour = today.getHours();
+        var todayMinute = today.getMinutes();
+        var todaySecond = today.getSeconds();
+    
+            /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+            year - 作为date对象的年份，为4位年份值
+            month - 0-11之间的整数，做为date对象的月份
+            day - 1-31之间的整数，做为date对象的天数
+            hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+            minutes - 0-59之间的整数，做为date对象的分钟数
+            seconds - 0-59之间的整数，做为date对象的秒数
+            microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+    
+        var t1 = Date.UTC(2022, 09, 26, 00, 00, 00); //北京时间2019-8-1 00:00:00
+        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+        var diff = t2 - t1;
+        var diffYears = Math.floor(diff / years);
+        var diffDays = Math.floor((diff / days) - diffYears * 365);
+        var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+        var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
+        var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes *
+                minutes) / seconds);
+        document.getElementById("sitetime").innerHTML = "本站已勉强运行 " + diffYears + " 年 " + diffDays + " 天 " + diffHours +
+                " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒" ;
+    } /*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
+        siteTime();   </script>
+<!-- 载入统计次数 不蒜子-->
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        
+
+     
+
+<!-- 小熊 -->
+<script src="./live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script>
+
+<script>!function(e){var r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));
+    function t(){for(var c=0;c<r.length;c++)t=r[c],void 0,0<=(n=t.getBoundingClientRect()).top&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=r[c];t=o,n=function(){r=r.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}t(),e.addEventListener("scroll",function(){!function(t,n){clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)}(t,e)})}(this);
+    </script>    
+<script>
+    L2Dwidget.init({
+        "pluginRootPath":"./live2dw/",
+        "pluginJsPath":"lib/",
+        "pluginModelPath":"assets/",
+        "tagMode":false,
+        "model":{"jsonPath":"./live2dw/assets/wanko.model.json"},
+        "display":{"position": "left", "width": 150, "height": 300,"hOffset": 0, "vOffset": -20 },
+        "mobile":{"show":false},
+        "react":{"opacity":0.7}});</script>
+
+
+<div id="live2d-widget" class="live2d-widget-container" style="position: fixed; left: 100px; bottom: -20px; width: 150px; height: 200px; z-index: 99999; opacity: 0.7; pointer-events: none;">
+    <canvas id="live2dcanvas" width="300" height="400" style="position: absolute; left: 0px; top: 0px; width: 150px; height: 200px;">
+        </canvas></div>
+
+        <!-- <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script> 
+        <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.0.min.js"></script> 
+        <script>
+       L2Dwidget.init({ 
+        "model": {jsonPath:"https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json","scale": 1 }, 
+        "display": { "position": "left", "width": 150, "height": 300,"hOffset": 0, "vOffset": -20 }, 
+        "mobile": { "show": true, "scale": 0.5 }, 
+        "react": { "opacityDefault": 0.7, "opacityOnHover": 0.2 } });
+        </script>
+       -->
+</body>
+</html>
